@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFO</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'index/css/style.css' %}">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,800;0,900;1,200;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="frame">
+        
+        <nav class="navigator">
+            <h3 class="site-name">Yunseo</h3>
+            <ul>
+                <li><a class="nav-menu" href="{% url 'index' %}">PROJECT</a></li>
+                <li><a class="nav-menu" href="{%url 'info' %}">INFO</a></li>
+            </ul>
+        </nav>
+
+
+
+        
+        <div class="profile-section">
+            <img id="profile-picture" src="{%static 'index/image/boy.png'%}">
+            <div class="introduction">
+                <h2>ABOUT ME</h2>
+                <p>"임베디드쪽 개발자가 되기 위해서 노력중입니다."<br>단국대학교, SW학과 재학중이며 아직 부족하지만
+                    열심히 공부 중입니다. :) 혼자하는 것보다 팀원과 소통하며 협력하는 것을 좋아합니다. 항상 긍정적
+                    이며 열심히할려고 노력중입니다. </p>
+                <h2>Hobby</h2>
+                <p  id="capability">헬스, 요즘에 헬스에 빠졋다.<br>농구, 어릴때 부터 좋아하던 운동이다.<br>게임, 롤,스타크래프트 좋아한다.</p>
+            </div>
+        </div>
+
+        <h5 class="value-menu">MY VALUES</h5>
+
+        <div class="value-section">
+            
+            <div class="value">
+               <!-- <img class="value-icon" src="together.png">-->
+                <div class="value-intro">
+                    <h4 class="value-name">GO TOGETHER</h4>
+                    <p class="value-exp">혼자 프로젝트를 진행하는 것보다 팀원과 같이 협력을 좋아하며, 같이 일 하였을때 더욱 빛나는 스타일 입니다.</p>
+                </div>
+            </div>
+
+
+            <div class="value">
+                <!--<img class="value-icon" src="partnership.png">-->
+                <div class="value-intro">
+                    <h4 class="value-name">RESPONSIBILITY</h4>
+                    <p class="value-exp">자신이 맡은 일은 잠을 안자더라도 끝까지 할려고 노력중이며 최대한 책임감 있게 일에 임하는 스타일 입니다.</p>
+                </div>
+            </div>
+            <div class="value">
+                <!--<img class="value-icon" src="dove.png">-->
+                <div class="value-intro">
+                    <h4 class="value-name">COMMUNICATION</h4>
+                    <p class="value-exp">협력을 좋아하다보니 팀원과 일적으로도 사적으로도 소통하는 것을 좋아하고 
+                        사람을 좋아하여 항상 긍정적인 스타일 입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <footer class="footer">
+            <h3 class="contact">CONTACT ME</h3>
+            <div class="links">
+                <a class="instagram" href="https://www.instagram.com/yun__se0/">INSTAGRAM</a>
+            </div>
+            <p class="footer-comment"><br>Feel free to contact me!<br>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+        </footer>
+        
+
+    </div>
+
+</body>
+</html>
